@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - PlantVision AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">PlantVision AI</a>
+        <div>
+            <a class="nav-link d-inline-block" href="/">Dashboard</a>
+            <a class="nav-link d-inline-block" href="/history">History</a>
+            <a class="nav-link d-inline-block" href="/about">About</a>
+            <a class="nav-link d-inline-block" href="/logout">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<section class="about-hero">
+    <div class="container">
+        <h1>About PlantVision AI</h1>
+        <p>AI-powered plant disease detection using image processing and deep learning.</p>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div>
+                <h2>Smart Plant Disease Detection</h2>
+                <p>PlantVision AI is a deep learning based system that analyzes plant leaf images and identifies whether the plant is healthy or affected by a specific disease.</p>
+                <p>The system uses a Convolutional Neural Network trained on more than 35,000 plant leaf images across 23 different classes.</p>
+                <p>Users can upload a leaf image and receive a prediction along with the model's confidence score.</p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static',filename='plant_bg.jpg') }}" alt="Plant">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-section">
+    <div class="container">
+        <h2>How It Works</h2>
+        <p class="section-text">Detect plant diseases in three simple steps.</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Upload Leaf</h3>
+                    <p>Upload a clear image of the plant leaf you want to analyze.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>AI Processing</h3>
+                    <p>Our CNN model analyzes the image and identifies its visual patterns.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Result</h3>
+                    <p>View the detected plant condition and prediction confidence instantly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>23</h2>
+                    <p>Classes</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>35K+</h2>
+                    <p>Images</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>89.32%</h2>
+                    <p>Test Accuracy</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>CNN</h2>
+                    <p>Deep Learning Model</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
